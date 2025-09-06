@@ -1,3 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    background: linear-gradient(135deg,black, #0b0c2d, black,#191970, #2c2f7c,black);
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+
+@layer utilities {
+    @keyframes float {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-15px) translateX(10px); }
+    }
+
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-float-slow {
+        animation: float 8s ease-in-out infinite;
+    }
+
+    .animate-float-fast {
+        animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes fade-in {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+        animation: fade-in 1s ease forwards;
+    }
+
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+}
