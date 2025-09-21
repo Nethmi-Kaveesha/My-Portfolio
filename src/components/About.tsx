@@ -38,11 +38,11 @@ const About: React.FC = () => {
                         {/* Social Links */}
                         <div className="flex gap-4 mt-6 justify-center md:justify-start">
                             {[
-                                { href: "https://facebook.com", icon: <FaFacebookF />, color: "text-blue-600" },
-                                { href: "https://linkedin.com", icon: <FaLinkedinIn />, color: "text-blue-700" },
-                                { href: "https://github.com", icon: <FaGithub />, color: "text-gray-900 dark:text-gray-200" },
-                                { href: "https://medium.com", icon: <FaMediumM />, color: "text-purple-600 dark:text-purple-400" },
-                                { href: "https://instagram.com", icon: <FaInstagram />, color: "text-pink-500" },
+                                { href: "https://www.facebook.com/share/1EQoUomjtE/?mibextid=wwXIfr", icon: <FaFacebookF />, color: "text-blue-600" },
+                                { href: "https://www.linkedin.com/in/kaveesha-fernando-882180281/", icon: <FaLinkedinIn />, color: "text-blue-700" },
+                                { href: "https://github.com/Nethmi-Kaveesha", icon: <FaGithub />, color: "text-gray-900 dark:text-gray-200" },
+                                { href: "https://medium.com/@kaveefernando2003", icon: <FaMediumM />, color: "text-purple-600 dark:text-purple-400" },
+                                { href: "https://www.instagram.com/nethmi584?igsh=MTE3d25nZ2cyand3aA%3D%3D&utm_source=qr", icon: <FaInstagram />, color: "text-pink-500" },
                             ].map((social, index) => (
                                 <a
                                     key={index}

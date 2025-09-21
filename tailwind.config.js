@@ -2,13 +2,14 @@ module.exports = {
     theme: {
         extend: {
             keyframes: {
-                'rotate-slow': {
-                    '0%': { transform: 'rotate(0deg)' },
-                    '100%': { transform: 'rotate(360deg)' },
+                spinSlow: {
+                    '0%': { transform: 'rotateY(0deg) rotateX(0deg)' },
+                    '50%': { transform: 'rotateY(180deg) rotateX(15deg)' },
+                    '100%': { transform: 'rotateY(360deg) rotateX(0deg)' },
                 },
             },
             animation: {
-                'rotate-slow': 'rotate-slow 6s linear infinite',
+                'spin-slow': 'spinSlow 8s linear infinite',
             },
         },
     },

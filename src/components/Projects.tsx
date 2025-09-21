@@ -1,5 +1,5 @@
-import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 interface ProjectProps {
     title: string;
@@ -9,180 +9,188 @@ interface ProjectProps {
     image?: string;
 }
 
-// 🔹 14 Projects (replace placeholders with real projects)
 const projects: ProjectProps[] = [
     {
         title: "Portfolio Website",
-        description: "My personal portfolio built with React, TailwindCSS, and animations.",
+        description: "My personal portfolio built with HTML, CSS, and animations.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/NewPortfolio.git",
+        image: "public/Screenshot 2025-09-18 114036.png",
     },
     {
-        title: "E-Commerce App",
-        description: "Full-stack MERN application with authentication & Stripe payments.",
+        title: "Foundly – Community Lost & Found App",
+        description:
+            "A community-driven lost and found app to report and track lost items. Built with full-stack technologies for seamless interaction.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/Foundly-A-Community-Lost-Found-App.git",
+        image: "public/WhatsApp Image 2025-09-18 at 12.13.15_b89c68c9.jpg", // Add a screenshot path here
+    },
+    // New project: UTAX Frontend
+    {
+        title: "UTax Frontend",
+        description:
+            "Frontend of UTAX platform for managing tax-related workflows. Built with React and deployed on Vercel.",
+        liveLink: "https://utax-frontend.vercel.app/login",
+        githubLink: "#", // If no public GitHub repo
+        image: "public/Screenshot 2025-06-22 030820.png", // Add a screenshot path here
     },
     {
-        title: "Chat Application",
-        description: "Real-time chat app using Socket.IO and Node.js.",
+        title: "E-Commerce Web App",
+        description:
+            "A full-featured e-commerce web application using JavaEE, JSP, and JDBC connection pooling.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/E-Commerce.git",
+        image: "s6.png",
     },
     {
-        title: "Blog Platform",
-        description: "Multi-user blogging platform with Markdown support.",
+        title: "TravelCo Holidays",
+        description:
+            "An all-in-one travel booking platform built with Spring Boot, HTML/CSS/JS, and MySQL.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/travelco-holidays.git",
+        image: "public/Screenshot 2025-04-16 032020 (1).png",
     },
     {
-        title: "Task Manager",
-        description: "React + Firebase task management system with drag-and-drop.",
+        title: "JavaScript Calculator",
+        description:
+            "A simple calculator built using HTML, CSS, and JavaScript. Supports basic arithmetic operations.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/js-Calculator.git",
+        image: "public/Screenshot 2025-09-18 003715.png",
     },
     {
-        title: "Weather App",
-        description: "Weather forecast app using OpenWeather API with charts.",
+        title: "To-Do App",
+        description:
+            "A simple To-Do application built with HTML, CSS, and JavaScript with local storage persistence.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/To-Do-App.git",
+        image: "public/Screenshot 2025-09-18 000435.png",
     },
     {
-        title: "Recipe Finder",
-        description: "Find recipes from an API, filter by ingredients & calories.",
+        title: "Culinary Arts Academy",
+        description:
+            "A Java-based application to manage a culinary arts academy, built with Java, Hibernate, JavaFX, and MySQL.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/culinaryarts-academy.git",
+        image: "public/Screenshot 2025-09-18 012658.png",
     },
     {
-        title: "Expense Tracker",
-        description: "Track expenses with charts & analytics.",
+        title: "Book Club Library App – Backend",
+        description:
+            "Backend server for Book Club Library App using Node.js, TypeScript, Express, and MySQL.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/book-club-library-app-backend.git",
+        image: "public/Screenshot 2025-09-18 015550.png",
     },
     {
-        title: "Music Player",
-        description: "Custom music player UI with playlist support.",
+        title: "Book Club Library App – Frontend",
+        description:
+            "Frontend client for the Book Club Library Management system built with React, TypeScript, and Tailwind CSS.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/https-githubook-club-library-app-frontend.git",
+        image: "public/Screenshot 2025-09-18 013848.png",
     },
     {
-        title: "Movie Database",
-        description: "Fetch & display movies from TMDB API with search & filters.",
+        title: "Color Palette Generator",
+        description:
+            "Generate color palettes from color codes, random colors, or uploaded images with copy-to-clipboard functionality.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/Color-Palette-Generator.git",
+        image: "public/Screenshot 2025-09-18 105807.png",
     },
     {
-        title: "Online Quiz",
-        description: "Interactive quiz app with timer and score tracking.",
+        title: "Fanta Project",
+        description:
+            "A visually engaging website featuring Fanta's product lineup with detailed product info and images.",
         liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        githubLink: "https://github.com/Nethmi-Kaveesha/Fanta-Project.git",
+        image: "public/Screenshot 2025-09-18 110948.png",
     },
     {
-        title: "Fitness Tracker",
-        description: "Track workouts and progress with charts.",
-        liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
-    },
-    {
-        title: "Travel Planner",
-        description: "Plan trips, add destinations, and manage itineraries.",
-        liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
-    },
-    {
-        title: "AI Image Generator",
-        description: "Generate images using OpenAI DALL·E API.",
-        liveLink: "#",
-        githubLink: "#",
-        image: "https://via.placeholder.com/400x250",
+        title: "Shinbi Anime TV",
+        description:
+            "A Japanese anime streaming platform inspired by Shinobi themes. Browse, watch, and track your favorite anime shows with a sleek, anime-inspired UI.",
+        liveLink: "#", // Optional live demo
+        githubLink: "https://www.figma.com/design/NV5t0tPFl3XwOAIdtZ5rL6/%E5%BF%8D%E3%81%B3---Shinobi-TV?node-id=0-1&p=f&t=hITtHLJzdxrl6s0M-0", // Figma link
+        image: "public/Screenshot 2025-07-21 225534.png", // Screenshot or mockup
     },
 ];
 
-const Projects: React.FC = () => (
-    <section
-        id="projects"
-        className="relative bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] py-20"
-    >
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
-            {/* Section Heading */}
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-gradient-x">
-                🚀 My Projects
-            </h2>
+const Projects: React.FC = () => {
+    const [selectedProject, setSelectedProject] = useState<ProjectProps | null>(
+        null
+    );
 
-            {/* Projects Grid */}
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {projects.map((project, idx) => (
-                    <div key={idx} className="relative group h-[400px]">
-                        {/* Gradient Border Wrapper */}
-                        <div className="absolute inset-0 rounded-xl p-[2px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-border-glow">
-                            {/* Card Content */}
-                            <div className="w-full h-full rounded-xl bg-gray-900 text-white flex flex-col">
-                                {project.image && (
-                                    <img
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="w-full h-40 object-cover rounded-t-xl"
-                                    />
-                                )}
-                                <div className="p-5 flex flex-col flex-1">
-                                    <h3 className="text-lg md:text-xl font-semibold mb-2">
-                                        {project.title}
-                                    </h3>
-                                    <p className="text-gray-400 text-sm flex-1">
-                                        {project.description}
-                                    </p>
-                                    <div className="flex gap-4 mt-4">
-                                        <a
-                                            href={project.githubLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition text-sm"
-                                        >
-                                            <FaGithub /> GitHub
-                                        </a>
-                                        <a
-                                            href={project.liveLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition text-sm"
-                                        >
-                                            <FaExternalLinkAlt /> Live Demo
-                                        </a>
-                                    </div>
-                                </div>
+    return (
+        <section className="py-20 bg-gray-900">
+            <div className="container mx-auto px-4 max-w-7xl">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
+                    🚀 My Projects
+                </h2>
+
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    {projects.map((project, idx) => (
+                        <div
+                            key={idx}
+                            onClick={() => setSelectedProject(project)}
+                            className="relative cursor-pointer rounded-xl p-[2px] bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 hover:shadow-lg transition"
+                        >
+                            {/* Inner card */}
+                            <div className="bg-gray-800 rounded-xl p-5 flex flex-col h-full">
+                                <h3 className="text-lg md:text-xl font-semibold mb-2">
+                                    {project.title}
+                                </h3>
+                                <p className="text-gray-400 text-sm">{project.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Modal */}
+                {selectedProject && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
+                        <div className="bg-gray-800 rounded-xl max-w-lg w-full p-6 relative">
+                            <button
+                                onClick={() => setSelectedProject(null)}
+                                className="absolute top-4 right-4 text-gray-400 hover:text-white"
+                            >
+                                <FaTimes />
+                            </button>
+                            <h3 className="text-2xl font-bold mb-4">
+                                {selectedProject.title}
+                            </h3>
+                            <p className="text-gray-300 mb-4">{selectedProject.description}</p>
+                            {selectedProject.image && (
+                                <img
+                                    src={selectedProject.image}
+                                    alt={selectedProject.title}
+                                    className="w-full h-60 object-cover rounded-lg mb-4"
+                                />
+                            )}
+                            <div className="flex gap-4">
+                                <a
+                                    href={selectedProject.githubLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition text-sm"
+                                >
+                                    <FaGithub /> GitHub
+                                </a>
+                                <a
+                                    href={selectedProject.liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition text-sm"
+                                >
+                                    <FaExternalLinkAlt /> Live Demo
+                                </a>
                             </div>
                         </div>
                     </div>
-                ))}
+                )}
             </div>
-        </div>
-
-        {/* Border Glow Animation */}
-        <style>{`
-      .animate-border-glow {
-        background-size: 300% 300%;
-        animation: borderGlow 6s linear infinite;
-      }
-      @keyframes borderGlow {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-    `}</style>
-    </section>
-);
+        </section>
+    );
+};
 
 export default Projects;
