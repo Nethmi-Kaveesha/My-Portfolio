@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Skills from "./components/Skills.tsx";
 import Education from "./components/Education.tsx";
 import ParallaxSection from "./components/ParallaxSection.tsx";
+import Achievements from "./components/Achievements.tsx";
 
 const App: React.FC = () => (
     <div>
@@ -15,6 +16,7 @@ const App: React.FC = () => (
             <ParallaxSection />
         <About />
         <Skills />
+        <Achievements/>
         <Education />
         <Projects />
         <Contact />

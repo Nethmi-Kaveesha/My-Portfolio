@@ -51,7 +51,7 @@ const Hero: React.FC = () => (
                     <div className="flex gap-4 mt-6 justify-center md:justify-start">
                         {/* Facebook */}
                         <a
-                            href="https://facebook.com"
+                            href="https://www.facebook.com/share/1EQoUomjtE/?mibextid=wwXIfr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-cyan-400 transition"
@@ -63,7 +63,7 @@ const Hero: React.FC = () => (
 
                         {/* LinkedIn */}
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/kaveesha-fernando-882180281/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-cyan-400 transition"
@@ -75,7 +75,7 @@ const Hero: React.FC = () => (
 
                         {/* GitHub */}
                         <a
-                            href="https://github.com"
+                            href="https://github.com/Nethmi-Kaveesha"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-cyan-400 transition"
@@ -87,7 +87,7 @@ const Hero: React.FC = () => (
 
                         {/* Medium */}
                         <a
-                            href="https://medium.com"
+                            href="https://medium.com/@kaveefernando2003"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-cyan-400 transition"
@@ -99,7 +99,7 @@ const Hero: React.FC = () => (
 
                         {/* Instagram */}
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/nethmi584?igsh=MTE3d25nZ2cyand3aA%3D%3D&utm_source=qr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-cyan-400 transition"
