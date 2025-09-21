@@ -1,15 +1,25 @@
 import React, { useRef } from "react";
-import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 const Contact: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
 
+    // Updated socials array
     const socials = [
-        { name: "LinkedIn", link: "https://linkedin.com/in/yourprofile", icon: <FaLinkedinIn />, color: "from-blue-500 to-blue-400" },
-        { name: "GitHub", link: "https://github.com/yourprofile", icon: <FaGithub />, color: "from-gray-700 to-gray-600" },
-        { name: "Twitter", link: "https://twitter.com/yourprofile", icon: <FaTwitter />, color: "from-sky-400 to-sky-300" },
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/kaveesha-fernando-882180281/",
+            icon: <FaLinkedinIn />,
+            color: "from-blue-500 to-blue-400"
+        },
+        {
+            name: "GitHub",
+            link: "https://github.com/Nethmi-Kaveesha",
+            icon: <FaGithub />,
+            color: "from-gray-700 to-gray-600"
+        },
     ];
 
     const sendEmail = (e: React.FormEvent) => {
@@ -109,9 +119,9 @@ const Contact: React.FC = () => {
                             className="group relative p-[2px] rounded-xl bg-gradient-to-r from-blue-400 via-indigo-500 to-cyan-400 transition transform hover:scale-110"
                         >
                             <div className="flex items-center gap-3 bg-[#1e293b]/80 backdrop-blur-xl rounded-xl px-5 py-3 text-gray-200 group-hover:text-white">
-                <span className={`w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r ${social.color} text-white`}>
-                  {social.icon}
-                </span>
+                                <span className={`w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r ${social.color} text-white`}>
+                                    {social.icon}
+                                </span>
                                 <span className="font-medium">{social.name}</span>
                             </div>
                         </a>
