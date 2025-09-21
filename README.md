@@ -18,4 +18,4 @@ Check out the live site here: [https://your-portfolio-url.vercel.app](https://yo
 - **Deployment:** Vercel
 - **Other Tools:** Git, GitHub
 
-## 📂 Project Structure
+
