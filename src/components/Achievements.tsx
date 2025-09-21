@@ -19,7 +19,7 @@ const achievements: Achievement[] = [
         title: "Best Business Visionary Award",
         organization: "Innovesta Tea",
         description: "Recognized as a leader in business strategy and innovation.",
-        img: "src/assets/WhatsApp Image 2025-09-20 at 13.34.41_e5a46774.jpg",
+        img: "public/WhatsApp Image 2025-09-20 at 13.34.41_e5a46774.jpg",
         date: "2023",
     },
     {
@@ -27,7 +27,7 @@ const achievements: Achievement[] = [
         title: "2nd Place - Best Innovative Solution",
         organization: "Circle Edge Event",
         description: "Awarded for innovative solutions with the Netronix team.",
-        img: "src/assets/WhatsApp Image 2025-09-20 at 13.36.30_a9cecb9a.jpg",
+        img: "public/WhatsApp Image 2025-09-20 at 13.36.30_a9cecb9a.jpg",
         date: "2024",
     },
     {
@@ -35,7 +35,7 @@ const achievements: Achievement[] = [
         title: "Completed CMJS Diploma",
         organization: "CMJS Institute",
         description: "Successfully completed diploma in [your field].",
-        img: "src/assets/WhatsApp Image 2025-09-20 at 13.42.02_3dd9070e.jpg",
+        img: "public/WhatsApp Image 2025-09-20 at 13.42.02_3dd9070e.jpg",
         date: "2025",
     },
     {
