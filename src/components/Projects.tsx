@@ -15,7 +15,7 @@ const projects: ProjectProps[] = [
         description: "My personal portfolio built with HTML, CSS, and animations.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/NewPortfolio.git",
-        image: "src/assets/Screenshot 2025-09-18 114036.png",
+        image: "public/images/3-12.png",
     },
     {
         title: "Foundly – Community Lost & Found App",
@@ -23,14 +23,14 @@ const projects: ProjectProps[] = [
             "A community-driven lost and found app to report and track lost items. Built with full-stack technologies for seamless interaction.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/Foundly-A-Community-Lost-Found-App.git",
-        image: "src/assets/WhatsApp Image 2025-09-18 at 12.13.15_b89c68c9.jpg",
+        image: "public/images/14.png",
     },
     {
         title: "UTax Frontend",
         description: "Frontend of UTAX platform for managing tax-related workflows. Built with React and deployed on Vercel.",
         liveLink: "https://utax-frontend.vercel.app/login",
         githubLink: "#",
-        image: "src/assets/screenshot-2025-06-22-030820.png",
+        image: "public/images/13.png",
     },
 
     {
@@ -47,7 +47,7 @@ const projects: ProjectProps[] = [
             "An all-in-one travel booking platform built with Spring Boot, HTML/CSS/JS, and MySQL.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/travelco-holidays.git",
-        image: "src/assets/Screenshot 2025-04-16 032020 (1).png",
+        image: "public/images/2.png",
     },
     {
         title: "JavaScript Calculator",
@@ -55,7 +55,7 @@ const projects: ProjectProps[] = [
             "A simple calculator built using HTML, CSS, and JavaScript. Supports basic arithmetic operations.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/js-Calculator.git",
-        image: "src/assets/Screenshot 2025-09-18 003715.png",
+        image: "public/images/5.png",
     },
     {
         title: "To-Do App",
@@ -63,7 +63,7 @@ const projects: ProjectProps[] = [
             "A simple To-Do application built with HTML, CSS, and JavaScript with local storage persistence.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/To-Do-App.git",
-        image: "src/assets//Screenshot 2025-09-18 000435.png",
+        image: "public/images/4.png",
     },
     {
         title: "Culinary Arts Academy",
@@ -71,7 +71,7 @@ const projects: ProjectProps[] = [
             "A Java-based application to manage a culinary arts academy, built with Java, Hibernate, JavaFX, and MySQL.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/culinaryarts-academy.git",
-        image: "public/images/1.png",
+        image: "public/images/6.png",
     },
     {
         title: "Book Club Library App – Backend",
@@ -79,7 +79,7 @@ const projects: ProjectProps[] = [
             "Backend server for Book Club Library App using Node.js, TypeScript, Express, and MySQL.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/book-club-library-app-backend.git",
-        image: "src/assets/Screenshot 2025-09-18 015550.png",
+        image: "public/images/8.png",
     },
     {
         title: "Book Club Library App – Frontend",
@@ -87,7 +87,7 @@ const projects: ProjectProps[] = [
             "Frontend client for the Book Club Library Management system built with React, TypeScript, and Tailwind CSS.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/https-githubook-club-library-app-frontend.git",
-        image: "src/assets/Screenshot 2025-09-18 013848.png",
+        image: "public/images/7.png",
     },
     {
         title: "Color Palette Generator",
@@ -95,7 +95,7 @@ const projects: ProjectProps[] = [
             "Generate color palettes from color codes, random colors, or uploaded images with copy-to-clipboard functionality.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/Color-Palette-Generator.git",
-        image: "src/assets/Screenshot 2025-09-18 105807.png",
+        image: "public/images/9.png",
     },
     {
         title: "Fanta Project",
@@ -103,16 +103,25 @@ const projects: ProjectProps[] = [
             "A visually engaging website featuring Fanta's product lineup with detailed product info and images.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/Fanta-Project.git",
-        image: "src/assets/Screenshot 2025-09-18 110948.png",
+        image: "public/images/10.png",
     },
     {
-        title: "Shinbi Anime TV",
+        title: "Shinobi Anime TV",
         description:
             "A Japanese anime streaming platform inspired by Shinobi themes. Browse, watch, and track your favorite anime shows with a sleek, anime-inspired UI.",
         liveLink: "#", // Optional live demo
         githubLink: "https://www.figma.com/design/NV5t0tPFl3XwOAIdtZ5rL6/%E5%BF%8D%E3%81%B3---Shinobi-TV?node-id=0-1&p=f&t=hITtHLJzdxrl6s0M-0", // Figma link
-        image: "src/assets/Screenshot 2025-07-21 225534.png", // Screenshot or mockup
+        image: "public/images/3.png", // Screenshot or mockup
     },
+    {
+        title: "QR Code Generator",
+        description:
+            "A simple QR Code Generator built using HTML, CSS, and JavaScript. Generate QR codes for any URL instantly.",
+        liveLink: "#", // Add live demo link if available
+        githubLink: "https://github.com/Nethmi-Kaveesha/QR-Code-Generator.git", // Replace with your repo
+        image: "public/images/11.png", // Move your screenshot to public/images/
+    },
+
 ];
 
 const Projects: React.FC = () => {
