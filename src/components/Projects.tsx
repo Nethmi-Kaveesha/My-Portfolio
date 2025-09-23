@@ -23,7 +23,7 @@ const projects: ProjectProps[] = [
             "A community-driven lost and found app to report and track lost items. Built with full-stack technologies for seamless interaction.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/Foundly-A-Community-Lost-Found-App.git",
-        image: "src/assets/WhatsApp Image 2025-09-18 at 12.13.15_b89c68c9.jpg", // Add a screenshot path here
+        image: "src/assets/WhatsApp Image 2025-09-18 at 12.13.15_b89c68c9.jpg",
     },
     {
         title: "UTax Frontend",
