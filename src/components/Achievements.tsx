@@ -19,7 +19,7 @@ const achievements: Achievement[] = [
         title: "Best Business Visionary Award",
         organization: "Innovesta Tea",
         description: "Recognized as a leader in business strategy and innovation.",
-        img: "public/images/a1.jpg",
+        img: "/images/a1.jpg",
         date: "2023",
     },
     {
@@ -27,7 +27,7 @@ const achievements: Achievement[] = [
         title: "2nd Place - Best Innovative Solution",
         organization: "Circle Edge Event",
         description: "Awarded for innovative solutions with the Netronix team.",
-        img: "public/images/a2.jpg",
+        img: "/images/a2.jpg",
         date: "2024",
     },
     {
@@ -35,7 +35,7 @@ const achievements: Achievement[] = [
         title: "Completed CMJS Diploma",
         organization: "CMJS Institute",
         description: "Successfully completed diploma in [your field].",
-        img: "public/images/a3.jpg",
+        img: "/images/a3.jpg",
         date: "2025",
     },
     {
