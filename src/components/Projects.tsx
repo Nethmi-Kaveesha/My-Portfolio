@@ -30,7 +30,7 @@ const projects: ProjectProps[] = [
         description: "Frontend of UTAX platform for managing tax-related workflows. Built with React and deployed on Vercel.",
         liveLink: "https://utax-frontend.vercel.app/login",
         githubLink: "#",
-        image: "src/assets/screenshot-2025-06-22-030820.png", // ✅ correct path
+        image: "src/assets/screenshot-2025-06-22-030820.png",
     },
 
     {
