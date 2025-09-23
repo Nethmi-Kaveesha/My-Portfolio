@@ -25,16 +25,14 @@ const projects: ProjectProps[] = [
         githubLink: "https://github.com/Nethmi-Kaveesha/Foundly-A-Community-Lost-Found-App.git",
         image: "arc/assets/WhatsApp Image 2025-09-18 at 12.13.15_b89c68c9.jpg", // Add a screenshot path here
     },
-    // New project: UTAX Frontend
     {
         title: "UTax Frontend",
-        description:
-            "Frontend of UTAX platform for managing tax-related workflows. Built with React and deployed on Vercel.",
+        description: "Frontend of UTAX platform for managing tax-related workflows. Built with React and deployed on Vercel.",
         liveLink: "https://utax-frontend.vercel.app/login",
-        githubLink: "#", // If no public GitHub repo
-        image: "/images/screenshot-2025-06-22-030820.png"
-
+        githubLink: "#",
+        image: "/images/screenshot-2025-06-22-030820.png", // ✅ correct path
     },
+
     {
         title: "E-Commerce Web App",
         description:
