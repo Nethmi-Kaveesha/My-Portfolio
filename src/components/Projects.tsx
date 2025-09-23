@@ -15,7 +15,7 @@ const projects: ProjectProps[] = [
         description: "My personal portfolio built with HTML, CSS, and animations.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/NewPortfolio.git",
-        image: "public/images/3-12.png",
+        image: "/images/3-12.png",
     },
     {
         title: "Foundly – Community Lost & Found App",
@@ -23,14 +23,14 @@ const projects: ProjectProps[] = [
             "A community-driven lost and found app to report and track lost items. Built with full-stack technologies for seamless interaction.",
         liveLink: "#",
         githubLink: "https://github.com/Nethmi-Kaveesha/Foundly-A-Community-Lost-Found-App.git",
-        image: "public/images/14.png",
+        image: "/images/14.png",
     },
     {
         title: "UTax Frontend",
         description: "Frontend of UTAX platform for managing tax-related workflows. Built with React and deployed on Vercel.",
         liveLink: "https://utax-frontend.vercel.app/login",
         githubLink: "#",
-        image: "public/images/13.png",
+        image: "/images/13.png",
     },
 
     {
