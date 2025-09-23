@@ -3,11 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaMediumM, FaGithub, FaInstagram } from "rea
 import HeroImage from "../assets/hero-image.jpg";
 
 const Hero: React.FC = () => (
-    <section
-        className="relative overflow-hidden flex items-center min-h-[100dvh]
-      bg-gradient-to-br from-cyan-50 via-purple-50 to-pink-50
-      dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
-    >
+    <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-cyan-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         {/* Floating background shapes */}
         <span className="absolute top-0 left-1/4 w-24 h-24 sm:w-36 sm:h-36 bg-cyan-400 dark:bg-cyan-700 rounded-full opacity-30 blur-3xl animate-[float_6s_ease-in-out_infinite]" />
         <span className="absolute top-1/3 right-1/5 w-28 h-28 sm:w-44 sm:h-44 bg-pink-400 dark:bg-pink-700 rounded-full opacity-20 blur-3xl animate-[float_8s_ease-in-out_infinite]" />
@@ -53,21 +49,35 @@ const Hero: React.FC = () => (
 
                     {/* Social Media Icons */}
                     <div className="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-center md:justify-start">
-                        {[
-                            { icon: <FaFacebookF />, url: "https://www.facebook.com/share/1EQoUomjtE/?mibextid=wwXIfr", color: "text-blue-600" },
-                            { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/in/kaveesha-fernando-882180281/", color: "text-blue-700" },
-                            { icon: <FaGithub />, url: "https://github.com/Nethmi-Kaveesha", color: "text-gray-900" },
-                            { icon: <FaMediumM />, url: "https://medium.com/@kaveefernando2003", color: "text-purple-600" },
-                            { icon: <FaInstagram />, url: "https://www.instagram.com/nethmi584?igsh=MTE3d25nZ2cyand3aA%3D%3D&utm_source=qr", color: "text-pink-500" }
-                        ].map(({ icon, url, color }, idx) => (
+                        {[{
+                            icon: <FaFacebookF />,
+                            url: "https://www.facebook.com/share/1EQoUomjtE/?mibextid=wwXIfr",
+                            color: "text-blue-600"
+                        }, {
+                            icon: <FaLinkedinIn />,
+                            url: "https://www.linkedin.com/in/kaveesha-fernando-882180281/",
+                            color: "text-blue-700"
+                        }, {
+                            icon: <FaGithub />,
+                            url: "https://github.com/Nethmi-Kaveesha",
+                            color: "text-gray-900"
+                        }, {
+                            icon: <FaMediumM />,
+                            url: "https://medium.com/@kaveefernando2003",
+                            color: "text-purple-600"
+                        }, {
+                            icon: <FaInstagram />,
+                            url: "https://www.instagram.com/nethmi584?igsh=MTE3d25nZ2cyand3aA%3D%3D&utm_source=qr",
+                            color: "text-pink-500"
+                        }].map(({icon, url, color}, idx) => (
                             <a
                                 key={idx}
                                 href={url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition"
+                                className="p-[2px] rounded-md bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-cyan-400 transition"
                             >
-                                <div className={`w-10 h-10 flex items-center justify-center rounded-md bg-transparent ${color}`}>
+                                <div className={`w-10 h-10 flex items-center justify-center bg-white dark:bg-gray-800 rounded-md ${color}`}>
                                     {icon}
                                 </div>
                             </a>
@@ -79,11 +89,11 @@ const Hero: React.FC = () => (
 
         {/* Animation Keyframes */}
         <style>{`
-      @keyframes float {
-        0%, 100% { transform: translateY(0) translateX(0); }
-        50% { transform: translateY(-20px) translateX(15px); }
-      }
-    `}</style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0) translateX(0); }
+                50% { transform: translateY(-20px) translateX(15px); }
+            }
+        `}</style>
     </section>
 );
 
